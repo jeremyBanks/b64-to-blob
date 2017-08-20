@@ -1,12 +1,14 @@
 (function(root, globalName, factory) {
   if (typeof define === 'function' && define.amd) {
-    // AMD
+    // AMD:
     define([], factory);
   } else if (typeof module === 'object' && module.exports) {
-    // Node
+    // Node:
     module.exports = factory();
+    // Use module export as simulated ES6 default export:
+    module.exports.default = module.exports;
   } else {
-    // Browser
+    // Browser:
     window[globalName] = factory();
   }
 }(this, 'b64toBlob', function() {
