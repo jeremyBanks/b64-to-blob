@@ -5,5 +5,14 @@
   "author": "Jeremy Banks <_@jeremy.ca> (https://jeremy.ca)",
   "license": "CC0-1.0",
   "main": "./b64toBlob.js",
-  "types": "./b64toBlob.d.ts"
+  "types": "./types/index.d.ts",
+  "scripts": {
+    "test": "dtslint types",
+    "preversion": "npm test",
+    "prepublishOnly": "npm test"
+  },
+  "devDependencies": {
+    "dtslint": "^0.1.2",
+    "typescript": "^2.4.2"
+  }
 }
