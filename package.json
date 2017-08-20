@@ -1,6 +1,6 @@
 {
   "name": "b64-to-blob",
-  "version": "1.2.15",
+  "version": "1.2.16",
   "homepage": "https://stackoverflow.com/questions/16245767/creating-a-blob-from-a-base64-string-in-javascript",
   "author": "Jeremy Banks <_@jeremy.ca> (https://jeremy.ca)",
   "license": "CC0-1.0",
